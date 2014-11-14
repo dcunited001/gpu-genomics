@@ -3,7 +3,7 @@ package gpu_genomics;
 import com.amd.aparapi.Kernel;
 
 public class ConvertToNucleicBytes extends Kernel {
-    private string nucleicData;
+    private String nucleicData;
     private int[] nucleicBytes;
 
     @Override
@@ -11,7 +11,7 @@ public class ConvertToNucleicBytes extends Kernel {
 
     }
 
-    public ConvertToNucleicBytes(string nucleicData) {
+    public ConvertToNucleicBytes(String nucleicData) {
 
     }
 
