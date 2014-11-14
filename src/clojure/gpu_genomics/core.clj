@@ -5,7 +5,8 @@
             [clojure.core.matrix.implementations :as mi]
             [clojure.core.matrix.compliance-tester :as mc])
   (:use [clojure.core.matrix]
-        [clojure.core.matrix.operators]))
+        [clojure.core.matrix.operators])
+  (:import (gpu_genomics NucleicHammingDistance ConvertToNucleicBytes)))
 
 ;; trying out the aparapi-matrix example
 ;; https://github.com/bobuhiro11/aparapi-matrix/blob/master/src/clojure/aparapi_matrix/example.clj
