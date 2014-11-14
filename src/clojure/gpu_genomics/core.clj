@@ -51,8 +51,9 @@
 ;;hmmm REPL no werky =( =((((((((((((
 ;; the code seems to be compiled into some intermediate step
 ;; so commands in REPL don't work.  this is sad, but GPU is still crunchin
-(ac/set-execution-mode :CPU)
-(example-run)
+(defn -main [& args]
+  (ac/set-execution-mode :CPU)
+  (example-run)
 
-(ac/set-execution-mode :GPU)
-(example-run)
+  (ac/set-execution-mode :GPU)
+  (example-run))
